@@ -43,10 +43,9 @@
     font-weight: 900;
 }
 .header__year--focus {
-    position: relative; /* To allow absolute positioning of child elements */
-    display: inline-block; /* Keeps everything in a tight container */
-    top: 50%;
-    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .header__year {
     font-family: "Reenie Beanie";
@@ -63,14 +62,12 @@
     height: auto;
 }
 .header__sparkleElement--left {
-    top: -20px;  /* Move it above the year */
-    left: -110px; /* Move it to the left of the year */
-    z-index: 0; /* Behind the year text */
+    top: 30%;
+    left: 42%;
 }
 .header__sparkleElement--right {
-    bottom: -20px;  /* Move it below the year */
-    right: -110px; /* Move it to the right of the year */
-    z-index: 0; /* Behind the year text */
+    top: 35%;
+    right: 42%;
 }
 .header__arrow {
     position: absolute;
@@ -262,9 +259,9 @@
 
 .projects__title {
     color: #F9BD4A;
-    font-family: "Rubik One";
+    font-family: "Rubik";
     font-size: 110px;
-    font-weight: 400;
+    font-weight: 900;
     line-height: normal;
     margin-bottom: 20px; /* Adds some space between the title and the arrow */
     z-index: 6;
@@ -280,6 +277,9 @@
     justify-content: center;
     margin: 0 auto;
     position: relative; /* Allows z-index to work */
+}
+.projects__item{
+    text-decoration: none;
 }
 
 
