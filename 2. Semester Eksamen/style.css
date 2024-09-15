@@ -1,0 +1,210 @@
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Annie Use Your Telescope", sans-serif;
+    background: url('images/background_clouds.png') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh; 
+    overflow: hidden; 
+}
+
+/* Backgrounds for different animals */
+body.background-fox {
+    background: url('images/fox_background.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.background-elephant {
+    background: url('images/elephant_backgroud.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.background-monkey {
+    background: url('images/monkey_background.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.background-owl {
+    background: url('images/owl-background.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.background-seal {
+    background: url('images/seal_background.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Section + clouds styles */
+.container {
+    text-align: center;
+    overflow: hidden;
+    height: 100%;
+    position: relative;
+}
+
+.cloud-top,
+.cloud-bottom {
+    width: 100%;
+    pointer-events: none; /* Ensure cloud doesn't block interaction */
+}
+
+.cloud-bottom {
+    position: absolute;
+    bottom: -20px; /* Move the bottom cloud further down */
+    left: 0;
+}
+
+/* Heading styles */
+.container__text {
+    color: #000;
+    font-size: 50px; /* Increased size */
+    font-weight: 400;
+    margin: 0; /* Removed margin */
+    margin-bottom: 25px;
+    z-index: 1;
+    cursor: default;
+    position: relative; /* Added to position emoji relative to text */
+}
+
+.clickable .container__text {
+    cursor: pointer; /* Add cursor pointer when h2 is clickable */
+}
+
+
+.clickable .container__text::after {
+    display: inline-block; /* Show hand emoji when the h2 is clickable */
+}
+
+/* Button styles */
+button {
+    color: #000;
+    font-size: 18px; /* Further reduced size */
+    font-weight: 400;
+    margin: 10px 0 20px; /* Adjusted margins */
+    background: rgba(255, 255, 255, 0.50);
+    border: 2px solid #000;
+    border-radius: 8px;
+    padding: 5px 10px; /* Adjusted size */
+    gap: 10px;
+    cursor: pointer;
+    z-index: 4;
+    pointer-events: all; /* Ensure button is interactive */
+    position: relative;
+    top: -30px;
+    visibility: hidden; /* Hide button initially */
+}
+
+.show-button button {
+    visibility: visible; /* Show button when an animal is clicked */
+}
+
+/* Images styles */
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 5px; 
+    z-index: 1;
+    margin-bottom: 50px;
+}
+
+.images img {
+    width: 150px; 
+    height: 150px; 
+    border: 10px solid #FFF; 
+    background: lightgray 50% / cover no-repeat;
+}
+
+.image-one {
+    transform: rotate(11.053deg);
+    margin-top: -100px; 
+}
+
+.image-two {
+    transform: rotate(-1.662deg);
+    margin-top: -30px; 
+}
+
+.image-three {
+    transform: rotate(8.023deg);
+    margin-top: -30px; 
+}
+
+.image-four {
+    transform: rotate(-11.724deg);
+    margin-top: -100px; 
+}
+
+/* Animals styles */
+.animals {
+    position: absolute;
+    width: 100%;
+    bottom: 10px; /* Move the animals further down */
+    left: 0;
+    height: 150px;
+    pointer-events: none; /* Ensure the clouds doesn't block interaction */
+}
+
+.animal {
+    width: 150px; 
+    height: auto;
+    position: absolute;
+    pointer-events: all; /* Ensure the whole animal is interactive */
+    cursor: pointer; /* Indicate the animal is interactive */
+    transform-origin: center center; /* Ensure scaling happens from the center */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.animal:hover {
+    transform: scale(1.1) translateY(-20px); /* Scale the animal and move it up */
+}
+.animal.clicked {
+    transform: scale(1.1) translateY(-20px); /* Maintain scale when clicked */
+}
+
+.elephant {
+    left: 2%;
+    top: -55%; /* Move the elephant further down */
+}
+
+.monkey {
+    left: 20%;
+    top: 0%; /* Move the monkey further down */
+}
+
+.fox {
+    left: 39%;
+    top: 25%; /* Move the fox further down */
+}
+
+.owl {
+    left: 63%;
+    top: 0%; /* Move the owl further down */
+}
+
+.seal {
+    width: 200px; /* Adjusted size for consistency */
+    height: auto;
+    left: 81%;
+    top: -50%; /* Move the seal further down */
+}
+/* Style for hand emoji */
+.container__text::after {
+    content: '👆'; /* Hand emoji */
+    position: absolute;
+    right: 495px; /* Adjust position as needed */
+    top: 68%;
+    transform: translateY(-50%) rotate(39.376deg); /* Apply rotation */
+    font-size: 25px; /* Match the size with h2 */
+    display: none; /* Hidden by default */
+    animation: handClick 1s infinite; /* Add the click animation */
+}
+/* Hand click animation */
+@keyframes handClick {
+    0%, 100% {
+        transform: scale(1) translateY(0) rotate(39.376deg);
+    }
+    50% {
+        transform: scale(0.9) translateY(-10px) rotate(39.376deg);
+    }
+}

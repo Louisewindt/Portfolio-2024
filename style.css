@@ -1,0 +1,363 @@
+.rubik-mono-one-regular {
+    font-family: "Rubik Mono One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .reenie-beanie-regular {
+    font-family: "Reenie Beanie", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+    
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url('images/background.png');
+    background-repeat: repeat;
+    background-size: auto;
+}
+.header{
+    position: relative;
+}
+.background {
+    position: absolute;
+    z-index: -1; /* Puts it behind the content */
+}
+.header__text{
+    margin-top: 20%;
+}
+.header__title{
+    color: #FFF;
+    text-align: center;
+    font-family: "Rubik";
+    font-size: 100px;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+.header__subtitle{
+    color: #FFF;
+    text-align: center;
+    font-family: "Rubik";
+    font-size: 85px;
+    font-weight: 900;
+}
+.header__year--focus {
+    position: relative; /* To allow absolute positioning of child elements */
+    display: inline-block; /* Keeps everything in a tight container */
+    top: 50%;
+    left: 50%;
+}
+.header__year {
+    font-family: "Reenie Beanie";
+    font-size: 100px;
+    font-weight: 500;
+    color: #FFF;
+    margin: 0;
+    position: relative;
+    z-index: 1; /* Ensures the year text is above the sparkle elements */
+}
+.header__sparkleElement {
+    position: absolute;
+    width: 100px; /* Adjust size if necessary */
+    height: auto;
+}
+.header__sparkleElement--left {
+    top: -20px;  /* Move it above the year */
+    left: -110px; /* Move it to the left of the year */
+    z-index: 0; /* Behind the year text */
+}
+.header__sparkleElement--right {
+    bottom: -20px;  /* Move it below the year */
+    right: -110px; /* Move it to the right of the year */
+    z-index: 0; /* Behind the year text */
+}
+.header__arrow {
+    position: absolute;
+    right: 10%;    /* Places the arrow at the right edge of the header */
+    top: -15%;    /* Vertically centers the arrow within the header */
+  }
+  .header__sticker--right{
+    position: absolute;
+    right: 5%;    /* Places the arrow at the right edge of the header */
+    top: 30%;    /* Vertically centers the arrow within the header */
+    height: 280px;
+    width: auto;
+  }
+  .header__sticker--left{
+    position: absolute;
+    left: 5%;    /* Places the arrow at the right edge of the header */
+    top: 30%;    /* Vertically centers the arrow within the header */
+    height: 250px;
+    width: auto;
+  }
+  .header__image{
+    width: 93%;
+    height: auto;
+    margin-top: -7%;
+  }
+
+
+  /*Introduction*/
+
+  .introduction {
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Separate left and right sides */
+    align-items: center; /* Center elements vertically */
+}
+.introduction__left{
+    display: flex;
+    flex-direction: column; /* Stack the text vertically */
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.introduction__content {
+    width: 70%;
+}
+
+.introduction__title {
+    color: #F9BD4A;
+    text-align: center;
+    font-family: "Rubik";
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 0;
+    padding-left: 11%;
+    
+}
+
+.introduction__text {
+    font-size: 42px;
+    font-style: normal;
+    font-family: "Rubik";
+    font-weight: 400;
+    line-height: normal;
+    color: #FFFFFF; /* White text color */
+    margin-bottom: 15px;
+    padding-left: 10%;
+    margin: 1%;
+}
+
+.introduction__icons {
+    display: flex;
+    flex-wrap: wrap; /* Allows icons to wrap on smaller screens */
+    gap: 20px;
+    margin-top: 20px;
+    padding-left: 10%;
+}
+
+.introduction__icon {
+    height: 120px;
+    width: auto;
+}
+.introduction__sticker,
+.introduction__heart,
+.introduction__sticker--mirrored {
+    position: absolute;
+}
+
+.introduction__image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%; /* Image occupies 50% of the width */
+    position: relative; /* To position stickers and other elements */
+}
+
+.introduction__image {
+    width: 200%; /* Full width of the container */
+    height: auto;
+    margin-top: 25%;
+
+}
+
+.introduction__paper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%; /* Adjust the size */
+    z-index: -1; /* Place behind the image */
+}
+
+.introduction__sticker {
+    top: 109px;
+    right: 42%;
+    width: 46%;
+}
+
+.introduction__heart {
+    top: 44%;
+    right: 68%;
+    width: 20%;
+}
+
+.introduction__sticker--mirrored {
+    top: 28%;
+    left: 4%;
+    width: 20%;
+    transform: scaleX(-1);
+}
+
+.introduction__tape--left {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+}
+
+.introduction__tape--right {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+}
+
+.introduction__arrow {
+    margin-top: 20px;
+    width: 20%;
+    padding-left: 10%;
+}
+
+
+  /*projects*/
+
+.projects {
+    position: relative;
+    z-index: 1; /* Ensure this section is above the background */
+}
+
+.projects__background {
+    position: absolute; /* Absolutely position the background */
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); /* Centers the background horizontally */
+    height: 1357px; /* Based on your Figma code */
+    width: 100%; /* Stretches across the width of the container */
+    z-index: 1; /* Ensure the background is below everything else */
+}
+
+.projects__drawings {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 110%;
+    z-index: 2;
+}
+
+.projects__header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px; /* Add some space from the top */
+}
+
+.projects__texts {
+    position: relative;
+    z-index: 4;
+    text-align: center;
+    right: 0%;
+    margin-top: 20%;
+}
+
+.projects__title {
+    color: #F9BD4A;
+    font-family: "Rubik One";
+    font-size: 110px;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20px; /* Adds some space between the title and the arrow */
+    z-index: 6;
+    position: relative; /* Allows z-index to work */
+}
+
+.projects__down-arrow {
+    width: 101px;
+    height: 101px;
+    padding: 10px;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative; /* Allows z-index to work */
+}
+
+
+/*Project list */
+
+
+
+.projects__list {
+    display: flex;
+    flex-direction: column; /* Stack projects vertically */
+    align-items: center; /* Center the items horizontally */
+    gap: 250px; /* Space between the project items */
+    position: relative; /* Keeps the list in normal document flow */
+    margin-top: 30%;
+    padding: 5%;
+}
+
+.projects__item {
+    display: flex;
+    align-items: center;
+    gap: 50px; /* Space between the image and the text */
+    width: 100%; /* Ensure it takes the full width of the container */
+    position: relative; /* Keep the item in the normal flow */
+}
+.projects__information{
+    display: flex;
+    width: px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 9px;
+}
+
+.projects__image{
+    width: 60%;
+}
+
+.projects__subtitle{
+    color: #F9BD4A;
+    font-family: "Rubik";
+    font-size: 50px;
+    font-weight: 900;
+    margin-top: 0%;
+}
+.projects__text{
+    font-size: 42px;
+    font-style: normal;
+    font-family: "Rubik";
+    font-weight: 400;
+    line-height: normal;
+    color: #FFFFFF; /* White text color */
+    margin-bottom: 45px;
+}
+
+
+
+
+/* Project One */
+
+.page-header__text{
+    margin-top: 5%;
+}
+
+
+.project-showcase{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 44px;
+    left: 8%;
+    transform: scale(1.3); /* Scale up by 30% */
+    margin-top: 10%;
+}
+.projects__text--information{
+    font-size: 24px;
+    font-style: normal;
+    font-family: "Rubik";
+    font-weight: 400;
+    line-height: normal;
+    color: #FFFFFF; /* White text color */
+    margin-bottom: 45px;
+}
