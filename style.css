@@ -94,6 +94,25 @@
     margin-top: -7%;
   }
 
+  /* Define the shake animation */
+@keyframes shake {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-5px, 5px); }
+    50% { transform: translate(5px, -5px); }
+    75% { transform: translate(-5px, -5px); }
+    100% { transform: translate(0, 0); }
+}
+
+/* Shake on hover for header stickers */
+.header__sticker:hover {
+    animation: shake 0.5s ease-in-out; /* Animation duration and easing */
+}
+
+/* Shake on hover for the introduction mirrored sticker */
+.introduction__sticker--mirrored:hover {
+    animation: shake 0.5s ease-in-out; /* Same animation for mirrored cat */
+}
+
 
   /*Introduction*/
 
@@ -360,4 +379,8 @@
     line-height: normal;
     color: #FFFFFF; /* White text color */
     margin-bottom: 45px;
+}
+
+.body__projectOne{
+
 }
