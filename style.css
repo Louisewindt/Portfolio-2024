@@ -8,6 +8,11 @@
     font-weight: 400;
     font-style: normal;
   }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
     
   body {
     margin: 0;
@@ -62,11 +67,11 @@
     height: auto;
 }
 .header__sparkleElement--left {
-    top: 30%;
+    top: 22%;
     left: 42%;
 }
 .header__sparkleElement--right {
-    top: 35%;
+    top: 28%;
     right: 42%;
 }
 .header__arrow {
@@ -229,7 +234,6 @@
 
 .introduction__arrow {
     margin-top: 20px;
-    width: 20%;
     padding-left: 10%;
 }
 
@@ -384,3 +388,46 @@
 .body__projectOne{
 
 }
+
+
+
+
+
+
+/* media queries */
+/* Large tablets and small desktops */
+@media (max-width: 1500px) {
+.introduction__image{
+    width: 100%;
+    height: auto;
+    right: 1%;
+}
+.header__sticker{
+    height: 25%;
+
+}
+.introduction__left{
+    margin-top: 15%;
+}
+.introduction__title{
+    font-size: 40px;
+    padding-left: 6%;
+}
+.introduction__text{
+    font-size: 34px;
+    padding-left: 5%;
+}
+.projects__list{
+    margin-top: 50%;
+}
+.header__arrow{
+    width: 30%;
+}
+.projects__drawings{
+    height: 80%;
+}
+.projects__texts{
+    margin-top: 35%;
+}
+}
+
