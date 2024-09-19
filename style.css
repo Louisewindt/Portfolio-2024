@@ -312,11 +312,11 @@
 
 .projects__list {
     display: flex;
-    flex-direction: column; /* Stack projects vertically */
-    align-items: center; /* Center the items horizontally */
-    gap: 250px; /* Space between the project items */
-    position: relative; /* Keeps the list in normal document flow */
-    margin-top: 30%;
+    flex-direction: column;
+    align-items: center;
+    gap: 250px;
+    position: relative;
+    margin-top: 42%;
     padding: 5%;
 }
 
@@ -429,5 +429,17 @@
 .projects__texts{
     margin-top: 35%;
 }
+.projects__subtitle{
+    font-size: 44px;
+}
+.projects__text{
+    font-size: 34px;
+}
+.projects__icon{
+    width: 25%;
+}
 }
 
+@media (max-width: 599px) { 
+    
+ }
