@@ -224,12 +224,14 @@
     position: absolute;
     top: -10px;
     left: 10px;
+    width: 15%;
 }
 
 .introduction__tape--right {
     position: absolute;
     top: -10px;
     right: 10px;
+    width: 15%;
 }
 
 .introduction__arrow {
@@ -441,5 +443,26 @@
 }
 
 @media (max-width: 599px) { 
-    
+    .introduction__tape{
+        width: -10%;
+    }
+    .header__sticker{
+        width: 14%;
+    }
+    .introduction__title{
+        font-size: 24px;
+    }
+    .introduction__text{
+        font-size: 16px;
+    }
+    .introduction__icon{
+        height: 54px;
+    }
+    .projects__title{
+        font-size: 58px;
+    }
+    .projects__background{
+        height: 900px;
+    }
+    .projects__list{}
  }
