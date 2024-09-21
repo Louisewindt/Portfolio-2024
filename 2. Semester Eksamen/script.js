@@ -25,7 +25,8 @@ function playClickSound() {
 
 // Function to change the background based on the clicked animal
 function changeBackground(animal) {
-    document.body.className = `background-${animal.toLowerCase()}`;
+    const backgroundSection = document.querySelector('.background');
+    backgroundSection.className = `background background-${animal.toLowerCase()}`;
 }
 
 // Function to change the h2 text based on the clicked animal

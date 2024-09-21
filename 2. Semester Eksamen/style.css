@@ -3,34 +3,43 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Annie Use Your Telescope", sans-serif;
+/*    background: url('images/background_clouds.png') no-repeat center center fixed;
+    background-size: cover;
+    height: 560px;
+    width: 768px; 
+    overflow: hidden; */
+}
+.background{
     background: url('images/background_clouds.png') no-repeat center center fixed;
     background-size: cover;
-    height: 100vh; 
+    height: 560px;
+    width: 768px; 
+    margin: 0 auto;
     overflow: hidden; 
 }
 
 /* Backgrounds for different animals */
-body.background-fox {
+.background.background-fox {
     background: url('images/fox_background.png') no-repeat center center fixed;
     background-size: cover;
 }
 
-body.background-elephant {
+.background.background-elephant {
     background: url('images/elephant_backgroud.png') no-repeat center center fixed;
     background-size: cover;
 }
 
-body.background-monkey {
+.background.background-monkey {
     background: url('images/monkey_background.png') no-repeat center center fixed;
     background-size: cover;
 }
 
-body.background-owl {
+.background.background-owl {
     background: url('images/owl-background.png') no-repeat center center fixed;
     background-size: cover;
 }
 
-body.background-seal {
+.background.background-seal {
     background: url('images/seal_background.png') no-repeat center center fixed;
     background-size: cover;
 }
@@ -41,6 +50,7 @@ body.background-seal {
     overflow: hidden;
     height: 100%;
     position: relative;
+    width: 760px;
 }
 
 .cloud-top,

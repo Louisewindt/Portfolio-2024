@@ -366,19 +366,33 @@
 .page-header__text{
     margin-top: 5%;
 }
+.header__subtitle {
+    position: relative;
+    color: #FFF; /* Text color */
+    font-family: "Rubik";
+    font-size: 85px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.header__subtitle::after {
+    content: "";
+    display: block;
+    width: 75%; /* Adjust the width of the line */
+    height: 5px; /* Height of the line */
+    background-color: #F9BD4A; /* Yellow color */
+    margin: 15px auto 0; /* Centers the line and adds margin */
+}
 
 
 .project-showcase{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 44px;
-    left: 8%;
-    transform: scale(1.3); /* Scale up by 30% */
-    margin-top: 10%;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically if needed */
+    flex-direction: column; /* Ensures content is stacked vertically */
 }
 .projects__text--information{
-    font-size: 24px;
+    font-size: 34px;
     font-style: normal;
     font-family: "Rubik";
     font-weight: 400;
@@ -386,12 +400,26 @@
     color: #FFFFFF; /* White text color */
     margin-bottom: 45px;
 }
-
-.body__projectOne{
-
+.projects__subtitle--projects{
+    font-size: 54px;
 }
 
-
+.project-showcase__header{
+    width: 115%; /* Ensure it fits within the parent container */
+    padding: 5%;
+    display: block;
+    margin-left: auto; /* Ensure the image is centered horizontally */
+    margin-right: auto; /* Ensure the image is centered horizontally */
+    position: relative;
+    left: 50%; /* Shift it to the right by 50% */
+    transform: translateX(-50%); /* Translate it back to center */
+}
+.body__projectOne{
+    overflow-x: hidden;
+}
+.projects__list--projectOne{
+    margin-top: 6%;
+}
 
 
 
