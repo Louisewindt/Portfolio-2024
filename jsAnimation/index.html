@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Animation</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- Include Rive library -->
+    <script src="https://unpkg.com/@rive-app/canvas@2.20.0"></script>
+
+    <!-- Include the external JavaScript file -->
+    <script src="javascript.js" defer></script>
+</head>
+<body>
+  <!-- Container for form and animation -->
+  <section class="form-container">
+    <!-- Canvas for Rive animation (above the form inputs) -->
+    <canvas id="canvas" width="500" height="300"></canvas>
+
+    <!-- Form fields below the canvas -->
+    <form>
+      <input type="text" id="username" name="username" placeholder="Username">
+      <input type="password" id="password" name="password" placeholder="Password">
+      <button type="button" id="show-password">👁️ Show Password</button>
+    </form>
+  </section>
+
+  <script>
+    // Initialize the Rive animation instance
+    const r = new rive.Rive({
+      src: "jsanimation.riv", // Path to your .riv file
+      canvas: document.getElementById("canvas"),
+      autoplay: true, // Let the animation play automatically
+      stateMachines: "State Machine 1", // Use State Machine 1
+      onLoad: () => {
+        r.resizeDrawingSurfaceToCanvas(); // Ensure proper scaling on load
+        
+        // Call the external JS logic once Rive is loaded
+        runRiveLogic(r);
+      }
+    });
+  </script>
+</html>

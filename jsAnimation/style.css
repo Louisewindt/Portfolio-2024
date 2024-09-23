@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 1439px;
+    height: 1024px;
+    background-image: url('background.png');
+}
+
+/* Ensure body takes up full height and centers content */
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+    /* Ensure body takes up full height and centers content */
+    body, html {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+      }
+  
+      /* Center the form container */
+      .form-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+  
+      /* Style for input fields */
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+  
+      /* Style for button */
+      button {
+        padding: 10px 20px;
+        margin-top: 15px;
+        border: none;
+        background-color: #007bff;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+      }
+  
+      button:hover {
+        background-color: #0056b3;
+      }
+  
+      /* Make sure the canvas is also centered */
+      canvas {
+        display: block;
+        margin-bottom: 20px; /* Adds space between canvas and input fields */
+      }
+
+

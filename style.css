@@ -340,7 +340,7 @@
 .projects__image{
     width: 100%; /* Adjust the width as needed */
     height: auto; /* Maintain the aspect ratio */
-    max-width: 600px; /* Optional: Limit the maximum width */
+    max-width: 650px; /* Optional: Limit the maximum width */
 }
 
 .projects__subtitle{

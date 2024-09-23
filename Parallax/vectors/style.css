@@ -1,0 +1,23 @@
+body {
+	height: 2000px;
+	background: #100F18;
+    margin: 0;
+}
+
+.parallax__image,.parallax__text {
+	position: absolute;
+	width: 100%;
+	transform: translateY(var(--translateY));
+	will-change: transform;
+}
+.parallax__text {
+    z-index: 1; /* Set a higher z-index for the text to bring it to the front */
+    color: #fff; /* Set text color */
+    text-align: center; /* Center the text */
+    font-size: 2em; /* Set font size */
+    top: 50%; /* Position the text in the middle vertically */
+    transform: translateY(-50%); /* Center the text vertically */
+}
+.parallax__under{
+    top: 150%;
+}
