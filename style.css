@@ -338,7 +338,9 @@
 }
 
 .projects__image{
-    width: 60%;
+    width: 100%; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+    max-width: 600px; /* Optional: Limit the maximum width */
 }
 
 .projects__subtitle{
@@ -422,7 +424,16 @@
 }
 
 
-
+@media (max-width: 1600px){
+    .header__sparkleElement--right{
+        top: 32%;
+        right: 40%;
+    }
+    .header__sparkleElement--left{
+        top: 23%;
+        left: 40%;
+    }
+}
 
 /* media queries */
 /* Large tablets and small desktops */
@@ -467,6 +478,14 @@
 }
 .projects__icon{
     width: 25%;
+}
+.header__sparkleElement--right{
+    top: 33%;
+    right: 40%;
+}
+.header__sparkleElement--left{
+    top: 25%;
+    left: 40%;
 }
 }
 

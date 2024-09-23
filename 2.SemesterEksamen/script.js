@@ -136,7 +136,7 @@ document.querySelectorAll('.animal').forEach(animal => {
 
 // Adding hover and click event listeners to the h2 element
 const heading = document.querySelector('.container__text');
-heading.addEventListener('click', playHoverSound);
+heading.addEventListener('mouseenter', playHoverSound);
 heading.addEventListener('click', playClickSound);
 
 // Hide the images and button initially
