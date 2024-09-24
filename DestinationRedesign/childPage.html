@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Børneskyen</title>
+    <link rel="stylesheet" href="childPage.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Baskervville:ital@0;1&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a class="header__link" href="index.html">
+        <svg
+          class="header__icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="19"
+          height="9"
+          viewBox="0 0 19 9"
+          fill="none"
+        >
+          <path
+            d="M18.5 5C18.7761 5 19 4.77614 19 4.5C19 4.22386 18.7761 4 18.5 4V5ZM0.646446 4.14645C0.451185 4.34171 0.451185 4.65829 0.646446 4.85355L3.82843 8.03553C4.02369 8.2308 4.34027 8.2308 4.53553 8.03553C4.7308 7.84027 4.7308 7.52369 4.53553 7.32843L1.70711 4.5L4.53553 1.67157C4.7308 1.47631 4.7308 1.15973 4.53553 0.964466C4.34027 0.769204 4.02369 0.769204 3.82843 0.964466L0.646446 4.14645ZM18.5 4L1 4V5L18.5 5V4Z"
+            fill="black"
+          />
+        </svg>
+        <p class="header__linkText">Tilbage</p>
+      </a>
+      <section class="headerText">
+        <h1 class="headerText__heading">Børneskyen</h1>
+        <p class="headerText__text">
+          Udforsk, leg og gem dine favoritaktiviteter
+        </p>
+      </section>
+    </header>
+    <!----------------Whislist and wishlist icon---------------->
+    <section class="wishListIcons">
+      <img
+        class="wishlistIcon"
+        src="Childpageimages/WishlistIcon.svg"
+        alt="Liste ikon"
+      />
+      <svg
+        class="wishListCloseIcon"
+        xmlns="http://www.w3.org/2000/svg"
+        width="64"
+        height="64"
+        viewBox="0 0 64 64"
+        fill="none"
+      >
+        <mask
+          id="mask0_1233_12663"
+          style="mask-type: alpha"
+          maskUnits="userSpaceOnUse"
+          x="0"
+          y="0"
+          width="64"
+          height="64"
+        >
+          <rect width="64" height="64" fill="#D9D9D9" />
+        </mask>
+        <g mask="url(#mask0_1233_12663)">
+          <path
+            d="M17.0673 50.6668L13.334 46.9335L28.2673 32.0002L13.334 17.0668L17.0673 13.3335L32.0007 28.2668L46.934 13.3335L50.6673 17.0668L35.734 32.0002L50.6673 46.9335L46.934 50.6668L32.0007 35.7335L17.0673 50.6668Z"
+            fill="#1C1B1F"
+          />
+        </g>
+      </svg>
+    </section>
+    <aside class="wishList">
+      <h2 class="wishList__title">Aktivites liste</h2>
+      <section class="wishList__card">
+        <!-- wishlist cards should appear here -->
+      </section>
+      <section class="wishlistText">
+        <h3 class="wishlistText--empty">
+          Du har endnu ikke valgt nogen aktiviteter
+        </h3>
+      </section>
+    </aside>
+    <!----------------Categories section---------------->
+    <section class="categorySection categoryChoose">
+      <h2 class="categorySection__title">Hvilket dyr er du?</h2>
+      <section class="categories">
+        <!------ Natur ------->
+        <section class="category">
+          <img
+            class="category__image"
+            src="images/categoryNature.png"
+            alt="Animeret ræv i en skov"
+          />
+          <h3 class="category__title">Naturglade Ræv</h3>
+        </section>
+        <!------ Active ------->
+        <section class="category">
+          <img
+            class="category__image"
+            src="images/categoryActive.png"
+            alt="Animeret abe foran en forlystelse"
+          />
+          <h3 class="category__title">Aktive Abe</h3>
+        </section>
+        <!------ Water ------->
+        <section class="category">
+          <img
+            class="category__image"
+            src="images/categoryWater.png"
+            alt="Animeret sæl på en strand"
+          />
+          <h3 class="category__title">Vandglade Sæl</h3>
+        </section>
+        <!------ Creative ------->
+        <section class="category">
+          <img
+            class="category__image"
+            src="images/categoryCreative.png"
+            alt="Animeret elefant med kreative redskaber i baggrunden"
+          />
+          <h3 class="category__title">Kreative Elefant</h3>
+        </section>
+        <!------ Cultural ------->
+        <section class="category">
+          <img
+            class="category__image"
+            src="images/categoryCultural.png"
+            alt="Animeret ugle på et museum"
+          />
+          <h3 class="category__title">Kulturelle Ugle</h3>
+        </section>
+      </section>
+    </section>
+    <!---------------- Natur section---------------->
+    <section class="categorySection">
+      <section class="categoryDescription natureDescription">
+        <h2 class="categoryDescription__title">Naturglade Ræv</h2>
+        <section class="categoryDescription__container">
+          <img
+            class="categoryDescription__image"
+            src="images/fox.svg"
+            alt="Ræv"
+          />
+          <p class="categoryDescription__text">
+            “Jeg elsker natur, såsom legepladser eller cykleture”
+          </p>
+        </section>
+      </section>
+    </section>
+    <section class="baggroundNature">
+      <!------product card section------->
+      <!------product card------->
+      <section class="categoryCards">
+        <section class="categoryCardsContainer"></section>
+      </section>
+      <!---------------- Active section---------------->
+      <section class="categorySection">
+        <section class="categoryDescription activeDescription">
+          <h2 class="categoryDescription__title">Aktive Abe</h2>
+          <section class="categoryDescription__container">
+            <img
+              class="categoryDescription__image"
+              src="images/monkey.svg"
+              alt="Abe"
+            />
+            <p class="categoryDescription__text">
+              “Jeg elsker, fart, sjov og rutsjebaner!”
+            </p>
+          </section>
+        </section>
+        <section class="baggroundActive">
+          <!------product card------->
+          <section class="categoryCards">
+            <section class="categoryCard">
+              <button class="categorySave addToWishList">
+                <svg
+                  class="categorySave__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="205"
+                  height="211"
+                  viewBox="0 0 205 211"
+                  fill="none"
+                >
+                  <path
+                    d="M76.9127 10.98C78.2083 4.47714 86.3981 2.28267 90.7716 7.26654L125.323 46.6408C128.797 50.599 133.996 52.5946 139.225 51.9772L191.249 45.8361C197.834 45.0588 202.452 52.1697 199.063 57.8692L172.293 102.897C169.602 107.424 169.311 112.985 171.514 117.768L193.431 165.347C196.205 171.37 190.869 177.959 184.401 176.498L133.305 164.952C128.168 163.792 122.789 165.233 118.921 168.806L80.4427 204.353C75.5723 208.853 67.6567 205.814 67.0479 199.212L62.2385 147.048C61.755 141.804 58.7222 137.134 54.1283 134.559L8.43073 108.949C2.64651 105.707 3.09024 97.2402 9.18165 94.6209L57.3059 73.9275C62.1437 71.8472 65.6481 67.5196 66.6771 62.3551L76.9127 10.98Z"
+                    fill="white"
+                    stroke="#FFCA42"
+                    stroke-width="8"
+                  />
+                </svg>
+              </button>
+              <img
+                class="categoryCard__image"
+                src="/Childpageimages/productcard/ringridningTivoli.png"
+                alt="Gendarmstien"
+              />
+              <section class="categoryCardText">
+                <h3 class="categoryCardText__title">Ringridning tivoli</h3>
+                <p class="categoryCardText__paragraph">
+                  Oplev sus, sjov og spæning i forlystelserne
+                </p>
+              </section>
+            </section>
+            <!------product card------->
+            <section class="categoryCard">
+              <button class="categorySave addToWishList">
+                <svg
+                  class="categorySave__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="205"
+                  height="211"
+                  viewBox="0 0 205 211"
+                  fill="none"
+                >
+                  <path
+                    d="M76.9127 10.98C78.2083 4.47714 86.3981 2.28267 90.7716 7.26654L125.323 46.6408C128.797 50.599 133.996 52.5946 139.225 51.9772L191.249 45.8361C197.834 45.0588 202.452 52.1697 199.063 57.8692L172.293 102.897C169.602 107.424 169.311 112.985 171.514 117.768L193.431 165.347C196.205 171.37 190.869 177.959 184.401 176.498L133.305 164.952C128.168 163.792 122.789 165.233 118.921 168.806L80.4427 204.353C75.5723 208.853 67.6567 205.814 67.0479 199.212L62.2385 147.048C61.755 141.804 58.7222 137.134 54.1283 134.559L8.43073 108.949C2.64651 105.707 3.09024 97.2402 9.18165 94.6209L57.3059 73.9275C62.1437 71.8472 65.6481 67.5196 66.6771 62.3551L76.9127 10.98Z"
+                    fill="white"
+                    stroke="#FFCA42"
+                    stroke-width="8"
+                  />
+                </svg>
+              </button>
+              <img
+                class="categoryCard__image"
+                src="/Childpageimages/productcard/universSciencePark.png"
+                alt="Gendarmstien"
+              />
+              <section class="categoryCardText">
+                <h3 class="categoryCardText__title">Universe Science Park</h3>
+                <p class="categoryCardText__paragraph">
+                  Oplev sjov, spænding og nye oplevelser i Universe Science Park
+                </p>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+      <!---------------- Water section---------------->
+      <section class="categorySection">
+        <section class="categoryDescription waterDescription">
+          <h2 class="categoryDescription__title">Vandglade Sæl</h2>
+          <section class="categoryDescription__container">
+            <img
+              class="categoryDescription__image"
+              src="images/seal.svg"
+              alt="Sæl"
+            />
+            <p class="categoryDescription__text">
+              “Jeg elsker alt ved vandet og stranden!”
+            </p>
+          </section>
+        </section>
+        <section class="baggroundWater">
+          <!------product card------->
+          <section class="categoryCards">
+            <section class="categoryCard">
+              <button class="categorySave addToWishList">
+                <svg
+                  class="categorySave__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="205"
+                  height="211"
+                  viewBox="0 0 205 211"
+                  fill="none"
+                >
+                  <path
+                    d="M76.9127 10.98C78.2083 4.47714 86.3981 2.28267 90.7716 7.26654L125.323 46.6408C128.797 50.599 133.996 52.5946 139.225 51.9772L191.249 45.8361C197.834 45.0588 202.452 52.1697 199.063 57.8692L172.293 102.897C169.602 107.424 169.311 112.985 171.514 117.768L193.431 165.347C196.205 171.37 190.869 177.959 184.401 176.498L133.305 164.952C128.168 163.792 122.789 165.233 118.921 168.806L80.4427 204.353C75.5723 208.853 67.6567 205.814 67.0479 199.212L62.2385 147.048C61.755 141.804 58.7222 137.134 54.1283 134.559L8.43073 108.949C2.64651 105.707 3.09024 97.2402 9.18165 94.6209L57.3059 73.9275C62.1437 71.8472 65.6481 67.5196 66.6771 62.3551L76.9127 10.98Z"
+                    fill="white"
+                    stroke="#FFCA42"
+                    stroke-width="8"
+                  />
+                </svg>
+              </button>
+              <img
+                class="categoryCard__image"
+                src="/Childpageimages/productcard/denSorteStrand.png"
+                alt="Gendarmstien"
+              />
+              <section class="categoryCardText">
+                <h3 class="categoryCardText__title">Den Sorte Strand</h3>
+                <p class="categoryCardText__paragraph">
+                  Perfekte strand for dig og din familie hvis i er i Sønderborg.
+                  Altid plads til leg
+                </p>
+              </section>
+            </section>
+            <!------product card------->
+            <section class="categoryCard">
+              <button class="categorySave addToWishList">
+                <svg
+                  class="categorySave__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="205"
+                  height="211"
+                  viewBox="0 0 205 211"
+                  fill="none"
+                >
+                  <path
+                    d="M76.9127 10.98C78.2083 4.47714 86.3981 2.28267 90.7716 7.26654L125.323 46.6408C128.797 50.599 133.996 52.5946 139.225 51.9772L191.249 45.8361C197.834 45.0588 202.452 52.1697 199.063 57.8692L172.293 102.897C169.602 107.424 169.311 112.985 171.514 117.768L193.431 165.347C196.205 171.37 190.869 177.959 184.401 176.498L133.305 164.952C128.168 163.792 122.789 165.233 118.921 168.806L80.4427 204.353C75.5723 208.853 67.6567 205.814 67.0479 199.212L62.2385 147.048C61.755 141.804 58.7222 137.134 54.1283 134.559L8.43073 108.949C2.64651 105.707 3.09024 97.2402 9.18165 94.6209L57.3059 73.9275C62.1437 71.8472 65.6481 67.5196 66.6771 62.3551L76.9127 10.98Z"
+                    fill="white"
+                    stroke="#FFCA42"
+                    stroke-width="8"
+                  />
+                </svg>
+              </button>
+              <img
+                class="categoryCard__image"
+                src="/Childpageimages/productcard/alnorStrandpark.png"
+                alt="Gendarmstien"
+              />
+              <section class="categoryCardText">
+                <h3 class="categoryCardText__title">Alnor Strandpark</h3>
+                <p class="categoryCardText__paragraph">
+                  Den perfekte blanding af legeplads og strand.
+                </p>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+      <!---------------- Creative section---------------->
+      <section class="categorySection">
+        <section class="categoryDescription creativeDescription">
+          <h2 class="categoryDescription__title">Kreative Elefant</h2>
+          <section class="categoryDescription__container">
+            <img
+              class="categoryDescription__image"
+              src="images/elephant.svg"
+              alt="Elefant"
+            />
+            <p class="categoryDescription__text">
+              "Jeg elsker at være kerativ og bruge min fantasi”
+            </p>
+          </section>
+        </section>
+        <section class="baggroundCreative">
+          <!------product card------->
+          <section class="categoryCards">
+            <section class="categoryCard">
+              <button class="categorySave addToWishList">
+                <svg
+                  class="categorySave__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="205"
+                  height="211"
+                  viewBox="0 0 205 211"
+                  fill="none"
+                >
+                  <path
+                    d="M76.9127 10.98C78.2083 4.47714 86.3981 2.28267 90.7716 7.26654L125.323 46.6408C128.797 50.599 133.996 52.5946 139.225 51.9772L191.249 45.8361C197.834 45.0588 202.452 52.1697 199.063 57.8692L172.293 102.897C169.602 107.424 169.311 112.985 171.514 117.768L193.431 165.347C196.205 171.37 190.869 177.959 184.401 176.498L133.305 164.952C128.168 163.792 122.789 165.233 118.921 168.806L80.4427 204.353C75.5723 208.853 67.6567 205.814 67.0479 199.212L62.2385 147.048C61.755 141.804 58.7222 137.134 54.1283 134.559L8.43073 108.949C2.64651 105.707 3.09024 97.2402 9.18165 94.6209L57.3059 73.9275C62.1437 71.8472 65.6481 67.5196 66.6771 62.3551L76.9127 10.98Z"
+                    fill="white"
+                    stroke="#FFCA42"
+                    stroke-width="8"
+                  />
+                </svg>
+              </button>
+              <img
+                class="categoryCard__image"
+                src="/Childpageimages/productcard/malPåKeramik.png"
+                alt="Gendarmstien"
+              />
+              <section class="categoryCardText">
+                <h3 class="categoryCardText__title">Mal på Keramik</h3>
+                <p class="categoryCardText__paragraph">
+                  Mal unikke mønstre på potter og keramik
+                </p>
+              </section>
+            </section>
+            <!------product card------->
+            <section class="categoryCard">
+              <button class="categorySave addToWishList">
+                <svg
+                  class="categorySave__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="205"
+                  height="211"
+                  viewBox="0 0 205 211"
+                  fill="none"
+                >
+                  <path
+                    d="M76.9127 10.98C78.2083 4.47714 86.3981 2.28267 90.7716 7.26654L125.323 46.6408C128.797 50.599 133.996 52.5946 139.225 51.9772L191.249 45.8361C197.834 45.0588 202.452 52.1697 199.063 57.8692L172.293 102.897C169.602 107.424 169.311 112.985 171.514 117.768L193.431 165.347C196.205 171.37 190.869 177.959 184.401 176.498L133.305 164.952C128.168 163.792 122.789 165.233 118.921 168.806L80.4427 204.353C75.5723 208.853 67.6567 205.814 67.0479 199.212L62.2385 147.048C61.755 141.804 58.7222 137.134 54.1283 134.559L8.43073 108.949C2.64651 105.707 3.09024 97.2402 9.18165 94.6209L57.3059 73.9275C62.1437 71.8472 65.6481 67.5196 66.6771 62.3551L76.9127 10.98Z"
+                    fill="white"
+                    stroke="#FFCA42"
+                    stroke-width="8"
+                  />
+                </svg>
+              </button>
+              <img
+                class="categoryCard__image"
+                src="/Childpageimages/productcard/escapeHouse.png"
+                alt="Gendarmstien"
+              />
+              <section class="categoryCardText">
+                <h3 class="categoryCardText__title">RubiLee's Escape House</h3>
+                <p class="categoryCardText__paragraph">
+                  Er du vild med at pille ved ting og løse pusslespil, så burde
+                  i prøve Escape House
+                </p>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+      <!---------------- Cultural section---------------->
+      <section class="categorySection">
+        <section class="categoryDescription cultureDescription">
+          <h2 class="categoryDescription__title">Kulturelle Ugle</h2>
+          <section class="categoryDescription__container">
+            <img
+              class="categoryDescription__image"
+              src="images/owl.svg"
+              alt="Ugle"
+            />
+            <p class="categoryDescription__text">
+              "uhu uh! Det er altid sjovt at lærer nye ting”
+            </p>
+          </section>
+        </section>
+
+        <section class="baggroundCultural">
+          <!------product card------->
+          <section class="categoryCards">
+            <section class="categoryCard">
+              <button class="categorySave addToWishList">
+                <svg
+                  class="categorySave__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="205"
+                  height="211"
+                  viewBox="0 0 205 211"
+                  fill="none"
+                >
+                  <path
+                    d="M76.9127 10.98C78.2083 4.47714 86.3981 2.28267 90.7716 7.26654L125.323 46.6408C128.797 50.599 133.996 52.5946 139.225 51.9772L191.249 45.8361C197.834 45.0588 202.452 52.1697 199.063 57.8692L172.293 102.897C169.602 107.424 169.311 112.985 171.514 117.768L193.431 165.347C196.205 171.37 190.869 177.959 184.401 176.498L133.305 164.952C128.168 163.792 122.789 165.233 118.921 168.806L80.4427 204.353C75.5723 208.853 67.6567 205.814 67.0479 199.212L62.2385 147.048C61.755 141.804 58.7222 137.134 54.1283 134.559L8.43073 108.949C2.64651 105.707 3.09024 97.2402 9.18165 94.6209L57.3059 73.9275C62.1437 71.8472 65.6481 67.5196 66.6771 62.3551L76.9127 10.98Z"
+                    fill="white"
+                    stroke="#FFCA42"
+                    stroke-width="8"
+                  />
+                </svg>
+              </button>
+              <img
+                class="categoryCard__image"
+                src="/Childpageimages/productcard/dybølBanke.png"
+                alt="Gendarmstien"
+              />
+              <section class="categoryCardText">
+                <h3 class="categoryCardText__title">Dybbøl Banke</h3>
+                <p class="categoryCardText__paragraph">
+                  Kom ind og oplev 1864 og alt dens historie. En spændende
+                  oplevelse for en hver ugle
+                </p>
+              </section>
+            </section>
+            <!------product card------->
+            <section class="categoryCard">
+              <button class="categorySave addToWishList">
+                <svg
+                  class="categorySave__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="205"
+                  height="211"
+                  viewBox="0 0 205 211"
+                  fill="none"
+                >
+                  <path
+                    d="M76.9127 10.98C78.2083 4.47714 86.3981 2.28267 90.7716 7.26654L125.323 46.6408C128.797 50.599 133.996 52.5946 139.225 51.9772L191.249 45.8361C197.834 45.0588 202.452 52.1697 199.063 57.8692L172.293 102.897C169.602 107.424 169.311 112.985 171.514 117.768L193.431 165.347C196.205 171.37 190.869 177.959 184.401 176.498L133.305 164.952C128.168 163.792 122.789 165.233 118.921 168.806L80.4427 204.353C75.5723 208.853 67.6567 205.814 67.0479 199.212L62.2385 147.048C61.755 141.804 58.7222 137.134 54.1283 134.559L8.43073 108.949C2.64651 105.707 3.09024 97.2402 9.18165 94.6209L57.3059 73.9275C62.1437 71.8472 65.6481 67.5196 66.6771 62.3551L76.9127 10.98Z"
+                    fill="white"
+                    stroke="#FFCA42"
+                    stroke-width="8"
+                  />
+                </svg>
+              </button>
+              <img
+                class="categoryCard__image"
+                src="/Childpageimages/productcard/sønderborgSlot.png"
+                alt="Gendarmstien"
+              />
+              <section class="categoryCardText">
+                <h3 class="categoryCardText__title">Sønderborg Slot</h3>
+                <p class="categoryCardText__paragraph">
+                  Oplev den spændende historie om Sønderborg, på vores helt eget
+                  slot
+                </p>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+    </section>
+    <script src="childPage.js"></script>
+  </body>
+</html>

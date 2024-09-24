@@ -1,0 +1,42 @@
+[
+  {
+    "image": "jsonimages/Guidedtur_rævcard.png",
+    "title": "Guided gåtur",
+    "description": "En hyggelig gåtur med din familie i den danske natur hvor i for en hjælpsom guide som viser jer vej"
+  },
+  {
+    "image": "jsonimages/legeplads_rævcard.png",
+    "title": "Naturlegeplads",
+    "description": "Brug for en god omgang leg? Hvorfor ik tage ud i og lege på naturlegepladsen i Sønderborg"
+  },
+  {
+    "image": "jsonimages/gendarmstien_rævcard.png",
+    "title": "Gendarmstien",
+    "description": "En historisk og smuk vandretur som altid byder på noget nyt."
+  },
+  {
+    "image": "jsonimages/krypILy_rævcard.png",
+    "title": "Kryb i ly",
+    "description": "Et hyggeligt sted at kryb i ly i Sønderborgs natur."
+  },
+  {
+    "image": "jsonimages/Guidedtur_rævcard.png",
+    "title": "Guided gåtur",
+    "description": "En hyggelig gåtur med din familie i den danske natur hvor i for en hjælpsom guide som viser jer vej"
+  },
+  {
+    "image": "jsonimages/legeplads_rævcard.png",
+    "title": "Naturlegeplads",
+    "description": "Brug for en god omgang leg? Hvorfor ik tage ud i og lege på naturlegepladsen i Sønderborg"
+  },
+  {
+    "image": "jsonimages/gendarmstien_rævcard.png",
+    "title": "Gendarmstien",
+    "description": "En historisk og smuk vandretur som altid byder på noget nyt."
+  },
+  {
+    "image": "jsonimages/krypILy_rævcard.png",
+    "title": "Kryb i ly",
+    "description": "Et hyggeligt sted at kryb i ly i Sønderborgs natur."
+  }
+]
