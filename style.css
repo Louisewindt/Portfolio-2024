@@ -341,6 +341,7 @@
     width: 100%; /* Adjust the width as needed */
     height: auto; /* Maintain the aspect ratio */
     max-width: 650px; /* Optional: Limit the maximum width */
+    border-radius: 8px;
 }
 
 .projects__subtitle{
