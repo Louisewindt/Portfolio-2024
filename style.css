@@ -427,6 +427,40 @@
 .link{
     color: #F9BD4A;
 }
+
+.page-header__back-button {
+    background-color: #F9BD4A; /* Fun yellow color */
+    color: white;
+    border: none;
+    border-radius: 50px; /* Make it fully rounded */
+    padding: 15px 30px;
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif; /* Fun, modern font */
+    font-weight: bold;
+    text-transform: uppercase; /* Make the text uppercase for more energy */
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Fun shadow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 10px; /* Move it 10px down */
+    margin-left: 10px;
+}
+
+.page-header__back-button:hover {
+    transform: translateY(-5px) scale(1.05); /* Slight bounce effect */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+
+.page-header__back-button:active {
+    transform: translateY(0px) scale(0.95); /* Press-down effect */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Soften shadow on click */
+}
+
+.page-header__back-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(249, 189, 74, 0.5); /* Fun focus outline matching button color */
+}
+
+
 @media (max-width: 1600px){
     .header__sparkleElement--right{
         top: 32%;
