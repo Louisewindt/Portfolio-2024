@@ -658,6 +658,38 @@
 }
 
 @media (max-width: 599px) { 
+
+    .projects__item {
+        flex-wrap: wrap;
+        flex-direction: column; /* Make the text go under the image */
+        align-items: center; /* Center-align for smaller screens */
+        margin-top: 50%
+    }
+    .projects__list {
+        gap: 0px;
+    }
+    .projects__drawings{
+        max-width: 100%;
+        height: auto;
+    }
+    .header__title{
+        font-size: 45px;
+    }
+    .header__subtitle{
+        font-size: 35px;
+    }
+    .header__year{
+        font-size: 50px;
+    }
+
+    .projects__image {
+        width: 100%; /* Take full width on smaller screens */
+        max-width: 100%; /* Ensure image doesn't exceed its container */
+    }
+
+    .projects__text, .projects__subtitle {
+        text-align: center; /* Center-align text on smaller screens */
+    }
     .introduction__tape{
         width: -10%;
     }
@@ -679,5 +711,12 @@
     .projects__background{
         height: 900px;
     }
-    .projects__list{}
+    .header__sparkleElement--right{
+        top: 30%;
+        right: 31%;
+    }
+    .header__sparkleElement--left{
+        top: 22%;
+        left: 31%;
+    }
  }
