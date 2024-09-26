@@ -415,6 +415,62 @@
 
 /* Project One */
 
+/* Lightbox Modal */
+.lightbox {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 10; /* Higher than other elements */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark semi-transparent background */
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox__image {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+}
+
+/* Close button for lightbox */
+.lightbox__close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 11; /* Higher than the lightbox image */
+}
+
+.lightbox__close:hover {
+    color: #F9BD4A; /* Fun hover color */
+}
+/* Simple hover effect for project images */
+.projects__image {
+    transition: transform 0.3s ease;
+}
+
+.projects__image:hover {
+    transform: scale(1.05); /* Slightly bigger on hover */
+}
+
+/* Lightbox zoom effect */
+.lightbox__image {
+    cursor: zoom-in; /* Default zoom cursor */
+    transition: transform 0.3s ease; /* Smooth zoom transition */
+}
+
+/* When dragging */
+.lightbox__image:active {
+    cursor: grabbing; /* Change to grabbing while dragging */
+}
+
 .page-header__text{
     margin-top: 5%;
 }
