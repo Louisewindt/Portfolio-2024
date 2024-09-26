@@ -471,6 +471,28 @@
     cursor: grabbing; /* Change to grabbing while dragging */
 }
 
+/* Text overlay for "Zoom and Drag" */
+.zoom-text {
+    position: absolute;
+    top: 20px; /* Adjust the position */
+    left: 50%;
+    font-family: "Rubik";
+    transform: translateX(-50%);
+    color: white;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 10px 15px;
+    border-radius: 8px;
+    z-index: 10; /* Ensure it stays on top of the image */
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+/* Hide the text after zoom or interaction */
+.zoom-text.hidden {
+    opacity: 0;
+}
+
 .page-header__text{
     margin-top: 5%;
 }
