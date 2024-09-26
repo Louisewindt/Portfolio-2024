@@ -657,7 +657,7 @@
 }
 }
 
-@media (max-width: 599px) { 
+@media (max-width: 800px) { 
 
     .projects__item {
         flex-wrap: wrap;
@@ -718,5 +718,25 @@
     .header__sparkleElement--left{
         top: 22%;
         left: 31%;
+    }
+ }
+ @media (max-width: 400px){
+    .header__title{
+        font-size: 35px;
+    }
+    .header__subtitle{
+        font-size: 30px;
+    }
+    .header__year{
+        font-size: 30px;
+    }
+    .projects__subtitle{
+        font-size: 30px;
+    }
+    .projects__text{
+        font-size: 25px;
+    }
+    .projects__item {
+        margin-top: 100%
     }
  }
