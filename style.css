@@ -113,6 +113,55 @@
     animation: shake 0.5s ease-in-out; /* Animation duration and easing */
 }
 
+/* Common styles */
+.header__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20%;
+}
+
+/* Typewriter effect for h1 */
+.anim-typewriter-h1, .anim-typewriter-h2 {
+    position: relative;
+    border-right: 2px solid rgba(0, 0, 0, 0.75);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* H1 typewriter effect */
+.anim-typewriter-h1 {
+    animation: typewriter-h1 4s steps(40) 1s 1 normal both,
+    blinkTextCursor 500ms steps(40) infinite normal;
+}
+
+/* H2 typewriter effect */
+.anim-typewriter-h2 {
+    animation: typewriter-h2 3s steps(30) 5s 1 normal both,
+    blinkTextCursor 500ms steps(30) infinite normal;
+}
+
+/* Keyframes for H1 */
+@keyframes typewriter-h1 {
+    from { width: 0; }
+    to { width: 18ch; /* Adjust for the length of your H1 text */ }
+}
+
+/* Keyframes for H2 */
+@keyframes typewriter-h2 {
+    from { width: 0; }
+    to { width: 18ch; /* Adjust for the length of your H2 text */ }
+}
+
+/* Cursor blink animation */
+@keyframes blinkTextCursor {
+    from { border-right-color: rgba(255, 255, 255, 0.75); }
+    to { border-right-color: transparent; }
+}
+
+
 /* Shake on hover for the introduction mirrored sticker */
 .introduction__sticker--mirrored:hover {
     animation: shake 0.5s ease-in-out; /* Same animation for mirrored cat */
