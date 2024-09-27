@@ -539,14 +539,16 @@
 }
 
 .project-showcase__header{
-    width: 115%; /* Ensure it fits within the parent container */
+    max-width: 100%; /* Ensure it fits within the parent container */
+    padding-top: 5%;
     padding: 5%;
     display: block;
     margin-left: auto; /* Ensure the image is centered horizontally */
     margin-right: auto; /* Ensure the image is centered horizontally */
     position: relative;
-    left: 50%; /* Shift it to the right by 50% */
+    left: 53%; /* Shift it to the right by 50% */
     transform: translateX(-50%); /* Translate it back to center */
+    border-radius: 16px;
 }
 .body__projectOne{
     overflow-x: hidden;
@@ -786,5 +788,15 @@
         align-items: center;
         width: 90%;
         position: relative;
+    }
+    .showcase__header {
+        width: 93%;
+        display: block;
+        padding: 0%;
+        margin-right: auto;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        padding-top: 10%;
     }
  }
