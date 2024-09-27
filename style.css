@@ -723,7 +723,17 @@
     }
     
  }
- @media (max-width: 400px){
+ @media (max-width: 500px){
+     /* Set font size to 25px for smaller screens */
+     .header__title {
+        font-size: 25px;
+    }
+
+    .header__subtitle {
+        font-size: 25px;
+    }
+
+    /* Adjust the typewriter effect for smaller text */
     /* Set font size to 25px for smaller screens */
     .header__title {
         font-size: 25px;
@@ -735,24 +745,29 @@
 
     /* Adjust the typewriter effect for smaller text */
     .anim-typewriter-h1 {
-        animation: typewriter-h1 4s steps(20) 1s 1 normal both,
-        blinkTextCursor 500ms steps(20) infinite normal;
+        animation: typewriter-h1 3s steps(40) 1s 1 normal both,
+        blinkTextCursor 500ms steps(40) infinite normal;
     }
 
     .anim-typewriter-h2 {
-        animation: typewriter-h2 3s steps(15) 5s 1 normal both,
-        blinkTextCursor 500ms steps(15) infinite normal;
+        animation: typewriter-h2 3s steps(50) 5s 1 normal both,
+        blinkTextCursor 500ms steps(35) infinite normal;
     }
 
     /* Adjust the width for smaller text */
     @keyframes typewriter-h1 {
         from { width: 0; }
-        to { width: 12ch; /* Adjust based on text length on phones */ }
+        to { width: 20ch; /* Increased to match the full text "Louise Wind Thomsen" */ }
     }
 
     @keyframes typewriter-h2 {
         from { width: 0; }
-        to { width: 12ch; /* Adjust based on text length on phones */ }
+        to { width: 20ch; /* Increased to match the full text "UI Designer/UI Engineer" */ }
+    }
+
+    .header__year {
+        font-size: 30px;
+        margin-top: 15px;
     }
     .header__year{
         font-size: 30px;
