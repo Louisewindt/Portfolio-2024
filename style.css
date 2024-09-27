@@ -799,4 +799,16 @@
         transform: translateX(-50%);
         padding-top: 10%;
     }
+    .projects__texts{
+        margin-top: 80%;
+    }
+    .projects__drawings{
+        margin-top: 25%;
+    }
+    .projects__down-arrow{
+        width: 60px;
+    }
+    .projects__title {
+        font-size: 40px;
+    }
  }
