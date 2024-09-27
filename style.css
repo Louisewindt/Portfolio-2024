@@ -1,858 +1,849 @@
-.rubik-mono-one-regular {
-    font-family: "Rubik Mono One", system-ui;
-    font-weight: 400;
-    font-style: normal;
-  }
-  .reenie-beanie-regular {
-    font-family: "Reenie Beanie", system-ui;
-    font-weight: 400;
-    font-style: normal;
-  }
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-    
-  body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    background-image: url('images/background.png');
-    background-repeat: repeat;
-    background-size: auto;
-}
-.header{
-    position: relative;
-}
-.background {
-    position: absolute;
-    z-index: -1; /* Puts it behind the content */
-}
-.header__text{
-    margin-top: 20%;
-}
-.header__title{
-    color: #FFF;
-    text-align: center;
-    font-family: "Rubik";
-    font-size: 100px;
-    font-weight: 900;
-    margin-bottom: 0;
-}
-.header__subtitle{
-    color: #FFF;
-    text-align: center;
-    font-family: "Rubik";
-    font-size: 85px;
-    font-weight: 900;
-}
-.header__year--focus {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.header__year {
-    font-family: "Reenie Beanie";
-    font-size: 100px;
-    font-weight: 500;
-    color: #FFF;
-    margin: 0;
-    position: relative;
-    z-index: 1; /* Ensures the year text is above the sparkle elements */
-}
-.header__sparkleElement {
-    position: absolute;
-    width: 100px; /* Adjust size if necessary */
-    height: auto;
-}
-.header__sparkleElement--left {
-    top: 22%;
-    left: 42%;
-}
-.header__sparkleElement--right {
-    top: 28%;
-    right: 41%;
-}
-.header__arrow {
-    position: absolute;
-    right: 10%;    /* Places the arrow at the right edge of the header */
-    top: -15%;    /* Vertically centers the arrow within the header */
-  }
-  .header__sticker--right{
-    position: absolute;
-    right: 5%;    /* Places the arrow at the right edge of the header */
-    top: 30%;    /* Vertically centers the arrow within the header */
-    height: 280px;
-    width: auto;
-  }
-  .header__sticker--left{
-    position: absolute;
-    left: 5%;    /* Places the arrow at the right edge of the header */
-    top: 30%;    /* Vertically centers the arrow within the header */
-    height: 250px;
-    width: auto;
-  }
-  .header__image{
-    width: 93%;
-    height: auto;
-    margin-top: -7%;
-  }
-
-  /* Define the shake animation */
-@keyframes shake {
-    0% { transform: translate(0, 0); }
-    25% { transform: translate(-5px, 5px); }
-    50% { transform: translate(5px, -5px); }
-    75% { transform: translate(-5px, -5px); }
-    100% { transform: translate(0, 0); }
-}
-
-/* Shake on hover for header stickers */
-.header__sticker:hover {
-    animation: shake 0.5s ease-in-out; /* Animation duration and easing */
-}
-
-/* Common styles */
-.header__text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-top: 20%;
-}
-
-/* Typewriter effect for h1 */
-.anim-typewriter-h1, .anim-typewriter-h2 {
-    position: relative;
-    border-right: 2px solid rgba(0, 0, 0, 0.75);
-    white-space: nowrap;
-    overflow: hidden;
-}
-
-/* H1 typewriter effect */
-.anim-typewriter-h1 {
-    animation: typewriter-h1 4s steps(40) 1s 1 normal both,
-    blinkTextCursor 500ms steps(40) infinite normal;
-}
-
-/* H2 typewriter effect */
-.anim-typewriter-h2 {
-    animation: typewriter-h2 3s steps(30) 5s 1 normal both,
-    blinkTextCursor 500ms steps(30) infinite normal;
-}
-
-/* Keyframes for H1 */
-@keyframes typewriter-h1 {
-    from { width: 0; }
-    to { width: 18ch; /* Adjust for the length of your H1 text */ }
-}
-
-/* Keyframes for H2 */
-@keyframes typewriter-h2 {
-    from { width: 0; }
-    to { width: 18ch; /* Adjust for the length of your H2 text */ }
-}
-
-/* Cursor blink animation */
-@keyframes blinkTextCursor {
-    from { border-right-color: rgba(255, 255, 255, 0.75); }
-    to { border-right-color: transparent; }
-}
-
-
-/* Shake on hover for the introduction mirrored sticker */
-.introduction__sticker--mirrored:hover {
-    animation: shake 0.5s ease-in-out; /* Same animation for mirrored cat */
-}
-
-
-  /*Introduction*/
-
-  .introduction {
-    display: flex; /* Flexbox layout */
-    justify-content: space-between; /* Separate left and right sides */
-    align-items: center; /* Center elements vertically */
-}
-.introduction__left{
-    display: flex;
-    flex-direction: column; /* Stack the text vertically */
-    align-items: flex-start;
-    gap: 15px;
-}
-
-.introduction__content {
-    width: 70%;
-}
-
-.introduction__title {
-    color: #F9BD4A;
-    text-align: center;
-    font-family: "Rubik";
-    font-size: 50px;
-    font-weight: 900;
-    margin-bottom: 0;
-    padding-left: 11%;
-    
-}
-
-.introduction__text {
-    font-size: 42px;
-    font-style: normal;
-    font-family: "Rubik";
-    font-weight: 400;
-    line-height: normal;
-    color: #FFFFFF; /* White text color */
-    margin-bottom: 15px;
-    padding-left: 10%;
-    margin: 1%;
-}
-
-.introduction__icons {
-    display: flex;
-    flex-wrap: wrap; /* Allows icons to wrap on smaller screens */
-    gap: 20px;
-    margin-top: 20px;
-    padding-left: 10%;
-}
-
-.introduction__icon {
-    height: 120px;
-    width: auto;
-}
-.introduction__sticker,
-.introduction__heart,
-.introduction__sticker--mirrored {
-    position: absolute;
-}
-
-.introduction__image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%; /* Image occupies 50% of the width */
-    position: relative; /* To position stickers and other elements */
-}
-
-.introduction__image {
-    width: 200%; /* Full width of the container */
-    height: auto;
-    margin-top: 25%;
-
-}
-
-.introduction__paper {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%; /* Adjust the size */
-    z-index: -1; /* Place behind the image */
-}
-
-.introduction__sticker {
-    top: 109px;
-    right: 42%;
-    width: 46%;
-}
-
-.introduction__heart {
-    top: 44%;
-    right: 68%;
-    width: 20%;
-}
-
-.introduction__sticker--mirrored {
-    top: 28%;
-    left: 4%;
-    width: 20%;
-    transform: scaleX(-1);
-}
-
-.introduction__tape--left {
-    position: absolute;
-    top: -10px;
-    left: 10px;
-    width: 15%;
-}
-
-.introduction__tape--right {
-    position: absolute;
-    top: -10px;
-    right: 10px;
-    width: 15%;
-}
-
-.introduction__arrow {
-    margin-top: 20px;
-    padding-left: 10%;
-}
-
-
-  /*projects*/
-
-.projects {
-    position: relative;
-    z-index: 1; /* Ensure this section is above the background */
-}
-
-.projects__background {
-    position: absolute; /* Absolutely position the background */
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%); /* Centers the background horizontally */
-    height: 1357px; /* Based on your Figma code */
-    width: 100%; /* Stretches across the width of the container */
-    z-index: 1; /* Ensure the background is below everything else */
-}
-
-.projects__drawings {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 110%;
-    z-index: 2;
-}
-
-.projects__header {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px; /* Add some space from the top */
-}
-
-.projects__texts {
-    position: relative;
-    z-index: 4;
-    text-align: center;
-    right: 0%;
-    margin-top: 20%;
-}
-
-.projects__title {
-    color: #F9BD4A;
-    font-family: "Rubik";
-    font-size: 110px;
-    font-weight: 900;
-    line-height: normal;
-    margin-bottom: 20px; /* Adds some space between the title and the arrow */
-    z-index: 6;
-    position: relative; /* Allows z-index to work */
-}
-
-.projects__down-arrow {
-    width: 101px;
-    height: 101px;
-    padding: 10px;
-    z-index: 4;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    position: relative; /* Allows z-index to work */
-}
-.projects__item{
-    text-decoration: none;
-}
-
-
-/*Project list */
-
-
-
-.projects__list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 250px;
-    position: relative;
-    margin-top: 42%;
-    padding: 5%;
-}
-
-.projects__item {
-    display: flex;
-    align-items: center;
-    gap: 50px; /* Space between the image and the text */
-    width: 100%; /* Ensure it takes the full width of the container */
-    position: relative; /* Keep the item in the normal flow */
-}
-.projects__information{
-    display: flex;
-    width: px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 9px;
-}
-
-.projects__image{
-    width: 100%; /* Adjust the width as needed */
-    height: auto; /* Maintain the aspect ratio */
-    max-width: 650px; /* Optional: Limit the maximum width */
-    border-radius: 8px;
-}
-
-.projects__subtitle{
-    color: #F9BD4A;
-    font-family: "Rubik";
-    font-size: 50px;
-    font-weight: 900;
-    margin-top: 0%;
-}
-.projects__text{
-    font-size: 42px;
-    font-style: normal;
-    font-family: "Rubik";
-    font-weight: 400;
-    line-height: normal;
-    color: #FFFFFF; /* White text color */
-    margin-bottom: 45px;
-}
-
-
-
-
-/* Project One */
-
-/* Lightbox Modal */
-.lightbox {
-    display: none; /* Hidden by default */
-    position: fixed;
-    z-index: 10; /* Higher than other elements */
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* Dark semi-transparent background */
-    justify-content: center;
-    align-items: center;
-}
-
-.lightbox__image {
-    max-width: 90%;
-    max-height: 90%;
-    border-radius: 8px;
-}
-
-/* Close button for lightbox */
-.lightbox__close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    font-size: 40px;
-    color: white;
-    background: none;
-    border: none;
-    cursor: pointer;
-    z-index: 11; /* Higher than the lightbox image */
-}
-
-.lightbox__close:hover {
-    color: #F9BD4A; /* Fun hover color */
-}
-/* Simple hover effect for project images */
-.projects__image {
-    transition: transform 0.3s ease;
-}
-
-.projects__image:hover {
-    transform: scale(1.05); /* Slightly bigger on hover */
-}
-
-/* Lightbox zoom effect */
-.lightbox__image {
-    cursor: zoom-in; /* Default zoom cursor */
-    transition: transform 0.3s ease; /* Smooth zoom transition */
-}
-
-/* When dragging */
-.lightbox__image:active {
-    cursor: grabbing; /* Change to grabbing while dragging */
-}
-
-/* Text overlay for "Zoom and Drag" */
-.zoom-text {
-    position: absolute;
-    top: 20px; /* Adjust the vertical position as needed */
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    font-size: 24px;
-    font-family: 'Rubik', sans-serif; /* Make sure the font is correct */
-    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
-    padding: 10px 15px;
-    border-radius: 8px;
-    z-index: 10; /* Ensure it stays on top of the image */
-    opacity: 1;
-    transition: opacity 0.5s ease;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-/* Hide the text after zoom or interaction */
-.zoom-text.hidden {
-    opacity: 0;
-}
-
-.page-header__text{
-    margin-top: 5%;
-}
-.header__subtitle {
-    position: relative;
-    color: #FFF; /* Text color */
-    font-family: "Rubik";
-    font-size: 85px;
-    font-weight: 900;
-    text-align: center;
-}
-
-.header__subtitle::after {
-    content: "";
-    display: block;
-    width: 75%; /* Adjust the width of the line */
-    height: 5px; /* Height of the line */
-    background-color: #F9BD4A; /* Yellow color */
-    margin: 15px auto 0; /* Centers the line and adds margin */
-}
-
-
-.project-showcase{
-    display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Centers vertically if needed */
-    flex-direction: column; /* Ensures content is stacked vertically */
-}
-.projects__text--information{
-    font-size: 34px;
-    font-style: normal;
-    font-family: "Rubik";
-    font-weight: 400;
-    line-height: normal;
-    color: #FFFFFF; /* White text color */
-    margin-bottom: 45px;
-}
-.projects__subtitle--projects{
-    font-size: 54px;
-}
-
-.project-showcase__header{
-    max-width: 100%; /* Ensure it fits within the parent container */
-    padding-top: 5%;
-    padding: 5%;
-    display: block;
-    margin-left: auto; /* Ensure the image is centered horizontally */
-    margin-right: auto; /* Ensure the image is centered horizontally */
-    position: relative;
-    left: 53%; /* Shift it to the right by 50% */
-    transform: translateX(-50%); /* Translate it back to center */
-    border-radius: 16px;
-}
-.body__projectOne{
-    overflow-x: hidden;
-}
-.projects__list--projectOne{
-    margin-top: 6%;
-}
-
-.link{
-    color: #F9BD4A;
-}
-
-.page-header__back-button {
-    background-color: #F9BD4A; /* Fun yellow color */
-    color: white;
-    border: none;
-    border-radius: 50px; /* Make it fully rounded */
-    padding: 15px 30px;
-    font-size: 18px;
-    font-family: 'Rubik', sans-serif; /* Fun, modern font */
-    font-weight: bold;
-    text-transform: uppercase; /* Make the text uppercase for more energy */
-    cursor: pointer;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Fun shadow effect */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-top: 10px; /* Move it 10px down */
-    margin-left: 10px;
-}
-
-.page-header__back-button:hover {
-    transform: translateY(-5px) scale(1.05); /* Slight bounce effect */
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
-}
-
-.page-header__back-button:active {
-    transform: translateY(0px) scale(0.95); /* Press-down effect */
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Soften shadow on click */
-}
-
-.page-header__back-button:focus {
-    outline: none;
-    box-shadow: 0 0 0 4px rgba(249, 189, 74, 0.5); /* Fun focus outline matching button color */
-}
-
-
-@media (max-width: 1600px){
-    .header__sparkleElement--right{
-        top: 32%;
-        right: 40%;
+    .rubik-mono-one-regular {
+        font-family: "Rubik Mono One", system-ui;
+        font-weight: 400;
+        font-style: normal;
     }
-    .header__sparkleElement--left{
-        top: 23%;
-        left: 40%;
+    .reenie-beanie-regular {
+        font-family: "Reenie Beanie", system-ui;
+        font-weight: 400;
+        font-style: normal;
     }
-}
-
-/* media queries */
-/* Large tablets and small desktops */
-@media (max-width: 1500px) {
-.introduction__image{
-    width: 100%;
-    height: auto;
-    right: 1%;
-}
-.header__sticker{
-    height: 25%;
-
-}
-.introduction__left{
-    margin-top: 15%;
-}
-.introduction__title{
-    font-size: 40px;
-    padding-left: 6%;
-}
-.introduction__text{
-    font-size: 34px;
-    padding-left: 5%;
-}
-.projects__list{
-    margin-top: 50%;
-}
-.header__arrow{
-    width: 30%;
-}
-.projects__drawings{
-    height: 80%;
-}
-.projects__texts{
-    margin-top: 35%;
-}
-.projects__subtitle{
-    font-size: 44px;
-}
-.projects__text{
-    font-size: 34px;
-}
-.projects__icon{
-    width: 25%;
-}
-.header__sparkleElement--right{
-    top: 36%;
-    right: 38%;
-}
-.header__sparkleElement--left{
-    top: 27%;
-    left: 38%;
-}
-}
-
-@media (max-width: 800px) { 
-
-    .projects__item {
-        flex-wrap: wrap;
-        flex-direction: column; /* Make the text go under the image */
-        align-items: center; /* Center-align for smaller screens */
-        margin-top: 50%
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
-    .projects__list {
-        gap: 0px;
+        
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        background-image: url('images/background.png');
+        background-repeat: repeat;
+        background-size: auto;
     }
-    .projects__drawings{
-        max-width: 100%;
-        height: auto;
+    .header{
+        position: relative;
+    }
+    .background {
+        position: absolute;
+        z-index: -1; /* Puts it behind the content */
+    }
+    .header__text{
+        margin-top: 20%;
     }
     .header__title{
-        font-size: 45px;
+        color: #FFF;
+        text-align: center;
+        font-family: "Rubik";
+        font-size: 100px;
+        font-weight: 900;
+        margin-bottom: 0;
     }
     .header__subtitle{
-        font-size: 35px;
+        color: #FFF;
+        text-align: center;
+        font-family: "Rubik";
+        font-size: 85px;
+        font-weight: 900;
     }
-    .header__year{
-        font-size: 50px;
+    .header__year--focus {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-
-    .projects__image {
-        width: 100%; /* Take full width on smaller screens */
-        max-width: 100%; /* Ensure image doesn't exceed its container */
+    .header__year {
+        font-family: "Reenie Beanie";
+        font-size: 100px;
+        font-weight: 500;
+        color: #FFF;
+        margin: 0;
+        position: relative;
+        z-index: 1; /* Ensures the year text is above the sparkle elements */
     }
-
-    .projects__text, .projects__subtitle {
-        text-align: center; /* Center-align text on smaller screens */
+    .header__sparkleElement {
+        position: absolute;
+        width: 100px; /* Adjust size if necessary */
+        height: auto;
     }
-    .introduction__tape{
-        width: -10%;
-    }
-    .header__sticker{
-        width: 14%;
-    }
-    .introduction__title{
-        font-size: 24px;
-    }
-    .introduction__text{
-        font-size: 16px;
-    }
-    .introduction__icon{
-        height: 54px;
-    }
-    .projects__title{
-        font-size: 58px;
-    }
-    .projects__background{
-        height: 900px;
-    }
-    .header__sparkleElement--right{
-        top: 30%;
-        right: 31%;
-    }
-    .header__sparkleElement--left{
+    .header__sparkleElement--left {
         top: 22%;
-        left: 31%;
+        left: 42%;
     }
-    
- }
- @media (max-width: 500px){
-     /* Set font size to 25px for smaller screens */
-     .header__title {
-        font-size: 25px;
+    .header__sparkleElement--right {
+        top: 28%;
+        right: 41%;
+    }
+    .header__arrow {
+        position: absolute;
+        right: 10%;    /* Places the arrow at the right edge of the header */
+        top: -15%;    /* Vertically centers the arrow within the header */
+    }
+    .header__sticker--right{
+        position: absolute;
+        right: 5%;    /* Places the arrow at the right edge of the header */
+        top: 30%;    /* Vertically centers the arrow within the header */
+        height: 280px;
+        width: auto;
+    }
+    .header__sticker--left{
+        position: absolute;
+        left: 5%;    /* Places the arrow at the right edge of the header */
+        top: 30%;    /* Vertically centers the arrow within the header */
+        height: 250px;
+        width: auto;
+    }
+    .header__image{
+        width: 93%;
+        height: auto;
+        margin-top: -7%;
     }
 
-    .header__subtitle {
-        font-size: 25px;
+    /* Define the shake animation */
+    @keyframes shake {
+        0% { transform: translate(0, 0); }
+        25% { transform: translate(-5px, 5px); }
+        50% { transform: translate(5px, -5px); }
+        75% { transform: translate(-5px, -5px); }
+        100% { transform: translate(0, 0); }
     }
 
-    /* Adjust the typewriter effect for smaller text */
-    /* Set font size to 25px for smaller screens */
-    .header__title {
-        font-size: 20px;
+    /* Shake on hover for header stickers */
+    .header__sticker:hover {
+        animation: shake 0.5s ease-in-out; /* Animation duration and easing */
     }
 
-    .header__subtitle {
-        font-size: 20px;
+    /* Common styles */
+    .header__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 20%;
     }
 
-    /* Adjust the typewriter effect for smaller text */
+    /* Typewriter effect for h1 */
+    .anim-typewriter-h1, .anim-typewriter-h2 {
+        position: relative;
+        border-right: 2px solid rgba(0, 0, 0, 0.75);
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    /* H1 typewriter effect */
     .anim-typewriter-h1 {
-        animation: typewriter-h1 3s steps(40) 1s 1 normal both,
+        animation: typewriter-h1 4s steps(40) 1s 1 normal both,
         blinkTextCursor 500ms steps(40) infinite normal;
     }
 
+    /* H2 typewriter effect */
     .anim-typewriter-h2 {
-        animation: typewriter-h2 3s steps(50) 5s 1 normal both,
-        blinkTextCursor 500ms steps(35) infinite normal;
+        animation: typewriter-h2 3s steps(30) 5s 1 normal both,
+        blinkTextCursor 500ms steps(30) infinite normal;
     }
 
-    /* Adjust the width for smaller text */
+    /* Keyframes for H1 */
     @keyframes typewriter-h1 {
         from { width: 0; }
-        to { width: 20ch; /* Increased to match the full text "Louise Wind Thomsen" */ }
+        to { width: 18ch; /* Adjust for the length of your H1 text */ }
     }
 
+    /* Keyframes for H2 */
     @keyframes typewriter-h2 {
         from { width: 0; }
-        to { width: 20ch; /* Increased to match the full text "UI Designer/UI Engineer" */ }
+        to { width: 18ch; /* Adjust for the length of your H2 text */ }
     }
 
-    .header__year {
-        font-size: 30px;
-        margin-top: 15px;
+    /* Cursor blink animation */
+    @keyframes blinkTextCursor {
+        from { border-right-color: rgba(255, 255, 255, 0.75); }
+        to { border-right-color: transparent; }
     }
-    .header__year{
-        font-size: 30px;
-        margin-top: 15px;
+
+
+    /* Shake on hover for the introduction mirrored sticker */
+    .introduction__sticker--mirrored:hover {
+        animation: shake 0.5s ease-in-out; /* Same animation for mirrored cat */
     }
+
+
+    /*Introduction*/
+
     .introduction {
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center-align content */
+        display: flex; /* Flexbox layout */
+        justify-content: space-between; /* Separate left and right sides */
+        align-items: center; /* Center elements vertically */
     }
-    .projects__subtitle{
-        font-size: 30px;
+    .introduction__left{
+        display: flex;
+        flex-direction: column; /* Stack the text vertically */
+        align-items: flex-start;
+        gap: 15px;
     }
-    .projects__text{
-        font-size: 25px;
+
+    .introduction__content {
+        width: 70%;
     }
-    .projects__item {
-        margin-top: 100%
-    }
-    .introduction {
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: -120%;
-    }
+
     .introduction__title {
-        font-size: 20px;
+        color: #F9BD4A;
+        text-align: center;
+        font-family: "Rubik";
+        font-size: 50px;
+        font-weight: 900;
+        margin-bottom: 0;
+        padding-left: 11%;
+        
     }
+
     .introduction__text {
-        font-size: 13px;
+        font-size: 42px;
+        font-style: normal;
+        font-family: "Rubik";
+        font-weight: 400;
+        line-height: normal;
+        color: #FFFFFF; /* White text color */
+        margin-bottom: 15px;
+        padding-left: 10%;
+        margin: 1%;
     }
-    .introduction__image {
-        width: 100%;
-        height: auto;
-        right: 1%;
-        margin-bottom: 160%;
-    }
-    .introduction__arrow {
-        max-width: 50%;
-    }
+
     .introduction__icons {
         display: flex;
-        flex-wrap: nowrap;
+        flex-wrap: wrap; /* Allows icons to wrap on smaller screens */
         gap: 20px;
         margin-top: 20px;
         padding-left: 10%;
     }
-    .introduction__icons {
-        display: flex;
-        gap: 10px;
-        margin-top: 20px;
-        padding-left: 0%;
-        flex-wrap: wrap;
-        align-content: center;
+
+    .introduction__icon {
+        height: 120px;
+        width: auto;
     }
+    .introduction__sticker,
+    .introduction__heart,
+    .introduction__sticker--mirrored {
+        position: absolute;
+    }
+
     .introduction__image-container {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 90%;
-        position: relative;
+        width: 50%; /* Image occupies 50% of the width */
+        position: relative; /* To position stickers and other elements */
     }
-    .showcase__header {
-        width: 93%;
-        display: block;
-        padding: 0%;
-        margin-right: auto;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-        padding-top: 10%;
-    }
-    .projects__texts{
-        margin-top: 80%;
-    }
-    .projects__drawings{
+
+    .introduction__image {
+        width: 200%; /* Full width of the container */
+        height: auto;
         margin-top: 25%;
+
     }
-    .projects__down-arrow{
-        width: 60px;
+
+    .introduction__paper {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%; /* Adjust the size */
+        z-index: -1; /* Place behind the image */
     }
-    .projects__title {
-        font-size: 40px;
-    }
+
     .introduction__sticker {
-        top: 7px;
+        top: 109px;
         right: 42%;
         width: 46%;
     }
- }
+
+    .introduction__heart {
+        top: 44%;
+        right: 68%;
+        width: 20%;
+    }
+
+    .introduction__sticker--mirrored {
+        top: 28%;
+        left: 4%;
+        width: 20%;
+        transform: scaleX(-1);
+    }
+
+    .introduction__tape--left {
+        position: absolute;
+        top: -10px;
+        left: 10px;
+        width: 15%;
+    }
+
+    .introduction__tape--right {
+        position: absolute;
+        top: -10px;
+        right: 10px;
+        width: 15%;
+    }
+
+    .introduction__arrow {
+        margin-top: 20px;
+        padding-left: 10%;
+    }
+
+
+    /*projects*/
+
+    .projects {
+        position: relative;
+        z-index: 1; /* Ensure this section is above the background */
+    }
+
+    .projects__background {
+        position: absolute; /* Absolutely position the background */
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%); /* Centers the background horizontally */
+        height: 1357px; /* Based on your Figma code */
+        width: 100%; /* Stretches across the width of the container */
+        z-index: 1; /* Ensure the background is below everything else */
+    }
+
+    .projects__drawings {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 110%;
+        z-index: 2;
+    }
+
+    .projects__header {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px; /* Add some space from the top */
+    }
+
+    .projects__texts {
+        position: relative;
+        z-index: 4;
+        text-align: center;
+        right: 0%;
+        margin-top: 20%;
+    }
+
+    .projects__title {
+        color: #F9BD4A;
+        font-family: "Rubik";
+        font-size: 110px;
+        font-weight: 900;
+        line-height: normal;
+        margin-bottom: 20px; /* Adds some space between the title and the arrow */
+        z-index: 6;
+        position: relative; /* Allows z-index to work */
+    }
+
+    .projects__down-arrow {
+        width: 101px;
+        height: 101px;
+        padding: 10px;
+        z-index: 4;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        position: relative; /* Allows z-index to work */
+    }
+    .projects__item{
+        text-decoration: none;
+    }
+
+
+    /*Project list */
+
+
+
+    .projects__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 250px;
+        position: relative;
+        margin-top: 42%;
+        padding: 5%;
+    }
+
+    .projects__item {
+        display: flex;
+        align-items: center;
+        gap: 50px; /* Space between the image and the text */
+        width: 100%; /* Ensure it takes the full width of the container */
+        position: relative; /* Keep the item in the normal flow */
+    }
+    .projects__information{
+        display: flex;
+        width: px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 9px;
+    }
+
+    .projects__image{
+        width: 100%; /* Adjust the width as needed */
+        height: auto; /* Maintain the aspect ratio */
+        max-width: 650px; /* Optional: Limit the maximum width */
+        border-radius: 8px;
+    }
+
+    .projects__subtitle{
+        color: #F9BD4A;
+        font-family: "Rubik";
+        font-size: 50px;
+        font-weight: 900;
+        margin-top: 0%;
+    }
+    .projects__text{
+        font-size: 42px;
+        font-style: normal;
+        font-family: "Rubik";
+        font-weight: 400;
+        line-height: normal;
+        color: #FFFFFF; /* White text color */
+        margin-bottom: 45px;
+    }
+
+
+
+
+    /* Project One */
+
+    /* Lightbox Modal */
+    .lightbox {
+        display: none; /* Hidden by default */
+        position: fixed;
+        z-index: 10; /* Higher than other elements */
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8); /* Dark semi-transparent background */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lightbox__image {
+        max-width: 90%;
+        max-height: 90%;
+        border-radius: 8px;
+    }
+
+    /* Close button for lightbox */
+    .lightbox__close {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        font-size: 40px;
+        color: white;
+        background: none;
+        border: none;
+        cursor: pointer;
+        z-index: 11; /* Higher than the lightbox image */
+    }
+
+    .lightbox__close:hover {
+        color: #F9BD4A; /* Fun hover color */
+    }
+    /* Simple hover effect for project images */
+    .projects__image {
+        transition: transform 0.3s ease;
+    }
+
+    .projects__image:hover {
+        transform: scale(1.05); /* Slightly bigger on hover */
+    }
+
+    /* Lightbox zoom effect */
+    .lightbox__image {
+        cursor: zoom-in; /* Default zoom cursor */
+        transition: transform 0.3s ease; /* Smooth zoom transition */
+    }
+
+    /* When dragging */
+    .lightbox__image:active {
+        cursor: grabbing; /* Change to grabbing while dragging */
+    }
+
+    /* Text overlay for "Zoom and Drag" */
+    .zoom-text {
+        position: absolute;
+        top: 20px; /* Adjust the vertical position as needed */
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+        font-size: 24px;
+        font-family: 'Rubik', sans-serif; /* Make sure the font is correct */
+        background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+        padding: 10px 15px;
+        border-radius: 8px;
+        z-index: 10; /* Ensure it stays on top of the image */
+        opacity: 1;
+        transition: opacity 0.5s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Hide the text after zoom or interaction */
+    .zoom-text.hidden {
+        opacity: 0;
+    }
+
+    .page-header__text{
+        margin-top: 5%;
+    }
+    .header__subtitle {
+        position: relative;
+        color: #FFF; /* Text color */
+        font-family: "Rubik";
+        font-size: 85px;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    .header__subtitle::after {
+        content: "";
+        display: block;
+        width: 75%; /* Adjust the width of the line */
+        height: 5px; /* Height of the line */
+        background-color: #F9BD4A; /* Yellow color */
+        margin: 15px auto 0; /* Centers the line and adds margin */
+    }
+
+
+    .project-showcase{
+        display: flex;
+        justify-content: center; /* Centers horizontally */
+        align-items: center; /* Centers vertically if needed */
+        flex-direction: column; /* Ensures content is stacked vertically */
+    }
+    .projects__text--information{
+        font-size: 34px;
+        font-style: normal;
+        font-family: "Rubik";
+        font-weight: 400;
+        line-height: normal;
+        color: #FFFFFF; /* White text color */
+        margin-bottom: 45px;
+    }
+    .projects__subtitle--projects{
+        font-size: 54px;
+    }
+
+    .project-showcase__header{
+        max-width: 100%; /* Ensure it fits within the parent container */
+        padding-top: 5%;
+        padding: 5%;
+        display: block;
+        margin-left: auto; /* Ensure the image is centered horizontally */
+        margin-right: auto; /* Ensure the image is centered horizontally */
+        position: relative;
+        left: 53%; /* Shift it to the right by 50% */
+        transform: translateX(-50%); /* Translate it back to center */
+        border-radius: 16px;
+    }
+    .body__projectOne{
+        overflow-x: hidden;
+    }
+    .projects__list--projectOne{
+        margin-top: 6%;
+    }
+
+    .link{
+        color: #F9BD4A;
+    }
+
+    .page-header__back-button {
+        background-color: #F9BD4A; /* Fun yellow color */
+        color: white;
+        border: none;
+        border-radius: 50px; /* Make it fully rounded */
+        padding: 15px 30px;
+        font-size: 18px;
+        font-family: 'Rubik', sans-serif; /* Fun, modern font */
+        font-weight: bold;
+        text-transform: uppercase; /* Make the text uppercase for more energy */
+        cursor: pointer;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Fun shadow effect */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        margin-top: 10px; /* Move it 10px down */
+        margin-left: 10px;
+    }
+
+    .page-header__back-button:hover {
+        transform: translateY(-5px) scale(1.05); /* Slight bounce effect */
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+    }
+
+    .page-header__back-button:active {
+        transform: translateY(0px) scale(0.95); /* Press-down effect */
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Soften shadow on click */
+    }
+
+    .page-header__back-button:focus {
+        outline: none;
+        box-shadow: 0 0 0 4px rgba(249, 189, 74, 0.5); /* Fun focus outline matching button color */
+    }
+
+
+    @media (max-width: 1600px){
+        .header__sparkleElement--right{
+            top: 32%;
+            right: 40%;
+        }
+        .header__sparkleElement--left{
+            top: 23%;
+            left: 40%;
+        }
+    }
+
+    /* media queries */
+    /* Large tablets and small desktops */
+    @media (max-width: 1500px) {
+    .introduction__image{
+        width: 100%;
+        height: auto;
+        right: 1%;
+    }
+    .header__sticker{
+        height: 25%;
+
+    }
+    .introduction__left{
+        margin-top: 15%;
+    }
+    .introduction__title{
+        font-size: 40px;
+        padding-left: 6%;
+    }
+    .introduction__text{
+        font-size: 34px;
+        padding-left: 5%;
+    }
+    .projects__list{
+        margin-top: 50%;
+    }
+    .header__arrow{
+        width: 30%;
+    }
+    .projects__drawings{
+        height: 80%;
+    }
+    .projects__texts{
+        margin-top: 35%;
+    }
+    .projects__subtitle{
+        font-size: 44px;
+    }
+    .projects__text{
+        font-size: 34px;
+    }
+    .projects__icon{
+        width: 25%;
+    }
+    .header__sparkleElement--right{
+        top: 36%;
+        right: 38%;
+    }
+    .header__sparkleElement--left{
+        top: 27%;
+        left: 38%;
+    }
+    }
+
+    @media (max-width: 800px) { 
+
+        .projects__item {
+            flex-wrap: wrap;
+            flex-direction: column; /* Make the text go under the image */
+            align-items: center; /* Center-align for smaller screens */
+            margin-top: 50%
+        }
+        .projects__list {
+            gap: 0px;
+        }
+        .projects__drawings{
+            max-width: 100%;
+            height: auto;
+        }
+        .header__title{
+            font-size: 45px;
+        }
+        .header__subtitle{
+            font-size: 35px;
+        }
+        .header__year{
+            font-size: 50px;
+        }
+
+        .projects__image {
+            width: 100%; /* Take full width on smaller screens */
+            max-width: 100%; /* Ensure image doesn't exceed its container */
+        }
+
+        .projects__text, .projects__subtitle {
+            text-align: center; /* Center-align text on smaller screens */
+        }
+        .introduction__tape{
+            width: -10%;
+        }
+        .header__sticker{
+            width: 14%;
+        }
+        .introduction__title{
+            font-size: 24px;
+        }
+        .introduction__text{
+            font-size: 16px;
+        }
+        .introduction__icon{
+            height: 54px;
+        }
+        .projects__title{
+            font-size: 58px;
+        }
+        .projects__background{
+            height: 900px;
+        }
+        .header__sparkleElement--right{
+            top: 30%;
+            right: 31%;
+        }
+        .header__sparkleElement--left{
+            top: 22%;
+            left: 31%;
+        }
+        
+    }
+    @media (max-width: 500px){
+        /* Set font size to 25px for smaller screens */
+        .header__title {
+            font-size: 25px;
+        }
+    
+        .header__subtitle {
+            font-size: 25px;
+        }
+    
+        /* Adjust the typewriter effect for smaller text */
+        .anim-typewriter-h1 {
+            animation: typewriter-h1 4s steps(24) 1s 1 normal both,
+            blinkTextCursor 500ms steps(24) infinite normal;
+        }
+    
+        .anim-typewriter-h2 {
+            animation: typewriter-h2 4s steps(25) 1s 1 normal both,
+            blinkTextCursor 500ms steps(25) infinite normal;
+        }
+    
+        /* Adjust the width for smaller text */
+        @keyframes typewriter-h1 {
+            from { width: 0; }
+            to { width: 24ch; /* Adjust to match full text length */ }
+        }
+    
+        @keyframes typewriter-h2 {
+            from { width: 0; }
+            to { width: 25ch; /* Adjust to match full text length */ }
+        }
+    
+
+        .header__year {
+            font-size: 30px;
+            margin-top: 15px;
+        }
+        .header__year{
+            font-size: 30px;
+            margin-top: 15px;
+        }
+        .introduction {
+            flex-direction: column; /* Stack items vertically */
+            align-items: center; /* Center-align content */
+        }
+        .projects__subtitle{
+            font-size: 30px;
+        }
+        .projects__text{
+            font-size: 25px;
+        }
+        .projects__item {
+            margin-top: 100%
+        }
+        .introduction {
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: -120%;
+        }
+        .introduction__title {
+            font-size: 20px;
+        }
+        .introduction__text {
+            font-size: 13px;
+        }
+        .introduction__image {
+            width: 100%;
+            height: auto;
+            right: 1%;
+            margin-bottom: 160%;
+        }
+        .introduction__arrow {
+            max-width: 50%;
+        }
+        .introduction__icons {
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 20px;
+            margin-top: 20px;
+            padding-left: 10%;
+        }
+        .introduction__icons {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+            padding-left: 0%;
+            flex-wrap: wrap;
+            align-content: center;
+        }
+        .introduction__image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+            position: relative;
+        }
+        .showcase__header {
+            width: 93%;
+            display: block;
+            padding: 0%;
+            margin-right: auto;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            padding-top: 10%;
+        }
+        .projects__texts{
+            margin-top: 80%;
+        }
+        .projects__drawings{
+            margin-top: 25%;
+        }
+        .projects__down-arrow{
+            width: 60px;
+        }
+        .projects__title {
+            font-size: 40px;
+        }
+        .introduction__sticker {
+            top: 7px;
+            right: 42%;
+            width: 46%;
+        }
+    }
