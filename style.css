@@ -725,10 +725,10 @@
  }
  @media (max-width: 400px){
     .header__title{
-        font-size: 29px;
+        font-size: 25px;
     }
     .header__subtitle{
-        font-size: 29px;
+        font-size: 25px;
     }
     .header__year{
         font-size: 30px;
@@ -810,5 +810,10 @@
     }
     .projects__title {
         font-size: 40px;
+    }
+    .introduction__sticker {
+        top: 7px;
+        right: 42%;
+        width: 46%;
     }
  }
