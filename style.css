@@ -736,11 +736,11 @@
     /* Adjust the typewriter effect for smaller text */
     /* Set font size to 25px for smaller screens */
     .header__title {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .header__subtitle {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     /* Adjust the typewriter effect for smaller text */
