@@ -546,7 +546,7 @@
         margin-left: auto; /* Ensure the image is centered horizontally */
         margin-right: auto; /* Ensure the image is centered horizontally */
         position: relative;
-        left: 53%; /* Shift it to the right by 50% */
+        left: 50%; /* Shift it to the right by 50% */
         transform: translateX(-50%); /* Translate it back to center */
         border-radius: 16px;
     }
